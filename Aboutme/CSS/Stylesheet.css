@@ -1,0 +1,45 @@
+html{
+
+    margin: auto;
+    grid-template-columns: auto;
+    background-color: white;
+}
+body{
+    width: 744px;
+    height: 1133px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #834BAF;
+    background-image: linear-gradient(to bottom,#854BAF,#7f61BB ,#0B0C11 95%);
+
+}
+article{
+    background-color: whitesmoke;
+    color: #424350;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 50px;
+    
+
+}
+main{
+    margin-top: 25%;
+}
+img{
+    padding-top: 50px;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+.collum{
+    columns: 2;
+}
+h1{
+    padding: 0px;
+    margin: 0px;
+}
+p{
+   padding: 15px;
+   margin: auto;
+}
