@@ -1,5 +1,5 @@
-Student name: your name 
-Student number: your student number
-Student class: your class
-GitHub Repository: your github repository URL
-GitHub Pages URL: your github pages URL
+Student name: sietse kesting	
+Student number: 721688
+Student class: INFT1a
+GitHub Repository: https://github.com/s-kesting/sietseinholland.github.io
+GitHub Pages URL: https://github.com/s-kesting/sietseinholland.github.io/tree/twig/assignment2324
