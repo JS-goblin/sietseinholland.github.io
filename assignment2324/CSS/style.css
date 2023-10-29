@@ -1,0 +1,383 @@
+
+
+* {
+    --accent: #293c43;
+    --highlight: #518e80;
+    --primary: #ECF0F8;
+    --background: #ffffff;
+
+
+    margin: 0px;
+    padding: 0px;
+
+    font-family: inter;
+
+
+    word-spacing: 0.05rem;
+    line-height: 1.3em;
+    text-indent: 1;
+    letter-spacing: 1;
+}
+*:first-letter{
+    text-transform: uppercase;
+}
+
+
+p,ul,ol {
+    font-size: 1.01em;
+    margin: 15px;
+}
+
+header {
+    background-color: var(--accent);
+    height: 60px;
+}
+
+nav {
+    float: right;
+}
+a:link{
+    color: var(--highlight);
+}
+a:visited{
+    color: #293c43;
+}
+a:hover{
+    font-style: italic;
+}
+h1 {
+    width: fit-content;
+    margin: auto;
+
+    padding: 15px;
+
+    color: var(--background)
+}
+
+
+
+h2 {
+    font-size: 1.2em;
+}
+
+figure {
+    background-color: var(--accent);
+    padding: 15px;
+    border-radius: 5%;
+}
+
+img {
+    /* inherit sizing from parent element  */
+    max-width: inherit;
+    max-height: inherit;
+    height: inherit;
+    width: inherit;
+
+}
+
+ol,
+li {
+    width: fit-content;
+    height: fit-content;
+
+}
+ol,li:nth-child(even){
+    background-color: #cff;
+}
+ol,li:nth-child(odd){
+    background-color: #fff;
+}
+
+footer{
+    
+
+    background-color: var(--accent);
+    height: 8%;
+    min-width: inherit;
+    padding: 0px 50px 0px;
+    >p{
+        margin: 15px 0px 15px;
+        color: #ffffff;
+    }
+    >a:visited{color: #ffffff;}
+    
+}
+#arrow{
+    position: relative;
+    bottom: 10px;
+    left: 86%;
+
+    border-style: solid;
+    border-color: transparent;
+    
+    border-width: 5px;
+    border-top: 10px solid var(--highlight);
+
+}
+#icon {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+}
+
+#welkomArticle {
+    border-radius: 25px;
+}
+
+
+.dropdown {
+    width: 125px;
+
+    margin: auto;
+    border-radius: 5px;
+    z-index: 9999;
+    position: relative;
+    bottom: 60px;
+    right: 60px;
+
+    >menu {
+        background-color: var(--primary);
+        border-radius: 5px;
+
+        height: 30px;
+
+
+        text-align: center;
+    }
+
+    >section {
+        background-color: var(--primary);
+        border-radius: 5px;
+    }
+
+    >section>a {
+        display: none;
+        margin: 6px auto 5px auto;
+        padding: 3px;
+
+        text-align: center;
+
+        background-color: var(--primary);
+        border-bottom-style: solid;
+        border-radius: 5px;
+        border-color: var(--highlight);
+    }
+}
+
+.dropdown:hover a {
+    display: block;
+}
+.dropdown:hover #arrow{
+    border-bottom: 10px solid var(--highlight);
+    border-top: transparent;
+    bottom: 40px;
+}
+
+
+.video {
+    background-color: #ffffff;
+    height: 250px;
+    width: 500px;
+    float: right;
+    margin: auto;
+
+    >img {
+        border-radius: 25px;
+    }
+
+}
+
+/* universal atributes for each main container */
+.mainContainer {
+    margin: 15px auto 0px;
+    width: 1200px;
+    row-gap: 50px;
+
+    >section {
+        column-gap: 25px;
+
+        >article,aside {
+            >section {
+                background-color: var(--primary);
+                padding: 15px;
+                border-radius: 0px 25px 25px 25px;
+                width: 100%;
+                float: left;
+            }
+
+            >h2 {
+                background-color: #293c43;
+                color: var(--background);
+                border-radius: 5px 5px 0px 0px;
+                padding: 6px;
+                width: fit-content;
+
+            }
+        }
+    }
+}
+
+/* PC */
+@media (min-width: 769px) {
+
+    #mainHomepagina {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+
+        >section {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 100px;
+
+            >article {
+                max-width: 750px;
+
+                >section>p {
+                    float: left;
+                    clear: both;
+                }
+            }
+        }
+    }
+    #mainSoortenPrinters {
+        display: grid;
+        grid-template-rows: auto auto auto;
+
+        >section {
+            display: grid;
+            grid-template-columns: auto auto auto;
+
+
+            >figure {
+                width: 250px;
+                height: 250px;
+            }
+
+            >article>section>p {
+                float: left;
+                width: 40%;
+
+            }
+        }
+    }
+    #main3Dprintergebruik {
+        display: grid;
+        grid-template-rows: auto auto auto;
+
+        >section {
+            display: grid;
+            grid-template-columns: 45% auto;
+            height: 400px;
+
+            figure {
+                width: 250px;
+                height: 250px;
+                margin-left: auto;
+                float: right;
+            }
+            >aside{
+                >#swanneck  {
+                    width: 487px;
+                    height: 157px;
+                }
+            
+            >section{
+                border-radius: 15px;
+                float: right;
+                width: 70%;
+            }
+        }
+        }
+        
+
+
+        >article>section>p {
+            float: left;
+        }
+    }
+    #mainModelTotObject{
+        display: grid;
+        grid-template-rows: auto auto auto;
+
+        >section {
+            display: grid;
+            grid-template-columns: 15% 25% 15% 25%;
+            grid-gap: 100px;
+
+            >figure{
+                width: 250px;
+                height: 200px;
+            }
+            >article {
+                width: 100%;
+
+                >section>p {
+                    float: left;
+                    clear: both;
+                }
+            }
+            >aside>section{
+                border-radius: 15px;
+                
+            }
+        }
+    }
+    #mainModellenWebsites{
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+
+        >section {
+            display: grid;
+            grid-template-columns: 30% 30% 35%;
+            gap: 100px;
+
+
+            >figure {
+                width: 300px;
+                height: 250px;
+            }
+
+        }
+    }
+
+    #maincontact{
+        >section{
+            width: 50%;
+        }
+    }
+
+
+}
+/* phone */
+@media (max-width: 768px) {
+    #swanneck{
+        width: 100%;
+        height: auto;
+    }
+    .dropdown > section> a {
+        display: block;
+    }
+    .dropdown >section> a{
+        border-bottom: 10px solid var(--highlight);
+        border-top: transparent;
+        bottom: 40px;
+    }
+    .mainContainer {
+
+        width: 600px;
+
+        >section {
+            display: grid;
+            grid-template-rows: auto auto;
+            row-gap: 5px;
+            margin: 10px 0px 10 px;
+
+            >figure {
+                grid-row: 1;
+                width: 80%;
+                height: auto;
+                margin: auto;
+            }
+        }
+    }
+}
