@@ -2,4 +2,4 @@ Student name: sietse kesting
 Student number: 721688
 Student class: IT1E
 GitHub Repository: https://github.com/s-kesting/sietseinholland.github.io/tree/twig
-GitHub Pages URL: your github pages URL
+GitHub Pages URL: https://s-kesting.github.io/sietseinholland.github.io/assignment2324/index.html
